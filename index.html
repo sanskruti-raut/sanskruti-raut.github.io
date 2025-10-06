@@ -438,6 +438,104 @@
             color: #1ABC9C;
         }
         
+
+        /* Publications Section */
+        #publications {
+            background-color: white;
+        }
+
+        .publications-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .scholar-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #4285F4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .scholar-btn:hover {
+            background-color: #3367D6;
+            transform: translateY(-2px);
+        }
+
+        .publications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .publication-item {
+            background-color: #F8F9FA;
+            border-radius: 10px;
+            padding: 2rem;
+            border-left: 4px solid #3498DB;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .publication-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .publication-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .publication-authors {
+            color: #555;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .publication-venue {
+            color: #7F8C8D;
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .publication-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: #3498DB;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .publication-link:hover {
+            color: #1ABC9C;
+        }
+
+        @media (max-width: 768px) {
+            .publications-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .publication-item {
+                padding: 1.5rem;
+            }
+        }
+        
         /* Experience Section - ENHANCED */
         #experience {
             background-color: white;
@@ -922,6 +1020,68 @@
                             <a href="https://github.com/sanskruti-raut/project3" class="project-link" target="_blank">GitHub →</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <div class="publications-header">
+                <h2>Publications</h2>
+                <a href="https://scholar.google.com/citations?user=3vZ5qcYAAAAJ&hl=en&oi=ao" class="scholar-btn" target="_blank">
+                    <span>🎓</span>
+                    Google Scholar Profile
+                </a>
+            </div>
+            
+            <div class="publications-list">
+                <!-- Publication 1 -->
+                <div class="publication-item">
+                    <div class="publication-title">
+                        Real Estate Based Recommender System Using ML
+                    </div>
+                    <div class="publication-authors">
+                        Raut, S., et al.
+                    </div>
+                    <div class="publication-venue">
+                        GIS Science Journal, 2022
+                    </div>
+                    <a href="https://drive.google.com/file/d/19_TdLmIzG5KCQx9b2eo9FYCW_3_hQvI5/view" class="publication-link" target="_blank">
+                        View Paper →
+                    </a>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-item">
+                    <div class="publication-title">
+                        Vehicle Cluster Development
+                    </div>
+                    <div class="publication-authors">
+                        Raut, S., Naware, S., Tank, V.
+                    </div>
+                    <div class="publication-venue">
+                        International Conference on Trends in Computational and Cognitive Sciences (ICTCS), 2021
+                    </div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-981-19-0095-2_71" class="publication-link" target="_blank">
+                        View Paper →
+                    </a>
+                </div>
+
+                <!-- Publication 3 -->
+                <div class="publication-item">
+                    <div class="publication-title">
+                        IOT Based Smart Irrigation System using Cisco Packet Tracer
+                    </div>
+                    <div class="publication-authors">
+                        Raut, S., Motade, S.
+                    </div>
+                    <div class="publication-venue">
+                        International Journal of Computer Sciences and Engineering (IJCSE), 2021
+                    </div>
+                    <a href="https://www.ijcseonline.org/full_paper_view.php?paper_id=5299" class="publication-link" target="_blank">
+                        View Paper →
+                    </a>
                 </div>
             </div>
         </div>
