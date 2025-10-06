@@ -207,7 +207,134 @@
             font-size: 0.9rem;
             font-weight: 500;
         }
-        
+
+        /* Education Section */
+        #education {
+            background-color: #F8F9FA;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .education-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .education-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .education-logo {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid #E8F6F3;
+            flex-shrink: 0;
+        }
+
+        .education-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .education-main {
+            flex: 1;
+        }
+
+        .education-degree {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-field {
+            font-size: 1rem;
+            color: #3498DB;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-university {
+            font-size: 1.1rem;
+            color: #2C3E50;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-location {
+            font-size: 0.95rem;
+            color: #7F8C8D;
+            font-style: italic;
+        }
+
+        .education-date {
+            display: inline-block;
+            background-color: #E8F6F3;
+            color: #16A085;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .education-courses {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #E8F6F3;
+        }
+
+        .education-courses-label {
+            font-weight: 600;
+            color: #2C3E50;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-courses-text {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .education-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .education-logo {
+                width: 70px;
+                height: 70px;
+            }
+        }
+                
         /* Projects Section */
         #projects {
             background-color: #F8F9FA;
@@ -588,6 +715,7 @@
             <ul id="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -648,6 +776,52 @@
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">AWS</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <!-- USC -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="education-logo">
+                            <img src="images/logos/usc.png" alt="USC Logo">
+                        </div>
+                        <div class="education-main">
+                            <div class="education-degree">Master of Science</div>
+                            <div class="education-field">Electrical Engineering (Machine Learning and Data Science)</div>
+                            <div class="education-university">University of Southern California</div>
+                            <div class="education-location">Los Angeles, USA</div>
+                        </div>
+                    </div>
+                    <div class="education-date">Aug 2023 - May 2025</div>
+                    <div class="education-courses">
+                        <div class="education-courses-label">Relevant Courses:</div>
+                        <div class="education-courses-text">
+                            Linear Algebra, Probability, Deep Learning, Machine Learning, Natural Language Processing, Cloud Computing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIT WPU -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="education-logo">
+                            <img src="images/logos/mitwpu.png" alt="MIT WPU Logo">
+                        </div>
+                        <div class="education-main">
+                            <div class="education-degree">Bachelor of Technology</div>
+                            <div class="education-field">Electronics and Communication Engineering</div>
+                            <div class="education-university">Maharashtra Institute of Technology</div>
+                            <div class="education-location">Pune, India</div>
+                        </div>
+                    </div>
+                    <div class="education-date">Aug 2017 - July 2021</div>
                 </div>
             </div>
         </div>
