@@ -467,7 +467,7 @@
     <section id="home">
         <div class="container">
             <h1>Hi, I'm Sanskruti Raut</h1>
-            <p class="subtitle">AI/ML Engineer | NLP Specialist | Software Developer</p>
+            <p class="subtitle">AI/ML Engineer | NLP Researcher | Software Developer</p>
             <div>
                 <a href="#projects" class="btn">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -523,41 +523,73 @@
             <h2>Projects</h2>
             <div class="project-filters">
                 <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+                <button class="filter-btn" onclick="filterProjects('cv')">Computer Vision</button>
                 <button class="filter-btn" onclick="filterProjects('ml')">Machine Learning</button>
                 <button class="filter-btn" onclick="filterProjects('nlp')">NLP</button>
                 <button class="filter-btn" onclick="filterProjects('sde')">Software Development</button>
             </div>
             <div class="projects-grid" id="projects-grid">
-                <!-- ML Project Example -->
+                <!-- CV Project Example -->
+                <div class="project-card" data-category="cv">
+                    <div class="project-image">🤖</div>
+                    <div class="project-content">
+                        <div class="project-category">Computer Vision</div>
+                        <h3 class="project-title">Computer Vision Super Resolution using SRGAN</h3>
+                        <p class="project-description">
+                            Achieved 3x enhancement on DIV2K images with SRGAN (Adversarial Loss: 0.0010, VGG Loss: 0.0014, Pixel Loss: 0.0625) 
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/sanskrutiraut/project1" class="project-link" target="_blank">GitHub →</a>
+                            <!-- <a href="#" class="project-link" target="_blank">Demo →</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML 1 Project Example -->
                 <div class="project-card" data-category="ml">
                     <div class="project-image">🤖</div>
                     <div class="project-content">
                         <div class="project-category">Machine Learning</div>
-                        <h3 class="project-title">Image Classification System</h3>
+                        <h3 class="project-title">Transfer Learning for Image Classification</h3>
                         <p class="project-description">
-                            Developed a CNN-based image classifier achieving 95% accuracy using TensorFlow. 
-                            Implemented data augmentation and transfer learning for improved performance.
+                            Built a multi-class classifier (ResNet50/101, EfficientNetB0, VGG16), achieving 91.21% F1 and 99.19% AUC with EfficientNetB0.
                         </p>
                         <div class="project-links">
                             <a href="https://github.com/sanskrutiraut/project1" class="project-link" target="_blank">GitHub →</a>
-                            <a href="#" class="project-link" target="_blank">Demo →</a>
+                            <!-- <a href="#" class="project-link" target="_blank">Demo →</a> -->
                         </div>
                     </div>
                 </div>
+
+                <!-- ML 2 Project Example -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">🤖</div>
+                    <div class="project-content">
+                        <div class="project-category">Machine Learning</div>
+                        <h3 class="project-title">Laptop Price Prediction using Machine Learning Algorithms</h3>
+                        <p class="project-description">
+                            Compared Linear Regression, Random Forest, Support Vector Regression, K-nearest neighbors, and Neural Networks, scoring R2 = 0.844 with Random Forest.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/sanskrutiraut/project1" class="project-link" target="_blank">GitHub →</a>
+                            <!-- <a href="#" class="project-link" target="_blank">Demo →</a> -->
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- NLP Project Example -->
                 <div class="project-card" data-category="nlp">
                     <div class="project-image">💬</div>
                     <div class="project-content">
                         <div class="project-category">NLP</div>
-                        <h3 class="project-title">Sentiment Analysis Tool</h3>
+                        <h3 class="project-title">Code Detective</h3>
                         <p class="project-description">
-                            Built a sentiment analysis system using BERT transformers for real-time 
-                            social media data processing and emotional trend extraction.
+                            Fine-tuned GraphCodeBERT on NVIDIA A40 for detecting semantically similar Python snippets (F1: 0.96)
                         </p>
                         <div class="project-links">
                             <a href="https://github.com/sanskrutiraut/project2" class="project-link" target="_blank">GitHub →</a>
-                            <a href="#" class="project-link" target="_blank">Demo →</a>
+                            <!-- <a href="#" class="project-link" target="_blank">Demo →</a> -->
                         </div>
                     </div>
                 </div>
@@ -567,14 +599,13 @@
                     <div class="project-image">⚡</div>
                     <div class="project-content">
                         <div class="project-category">Software Development</div>
-                        <h3 class="project-title">Task Management Application</h3>
+                        <h3 class="project-title">Vital Watch</h3>
                         <p class="project-description">
-                            Full-stack web application built with React and Node.js featuring 
-                            real-time collaboration, task tracking, and team management capabilities.
+                            Developed a real-time ICU Patient Monitoring System with custom alerts, displaying vital signs through an interactive dashboard using Node.js/Express backend, React frontend, and PostgreSQL database, deployed on AWS EC2.
                         </p>
                         <div class="project-links">
                             <a href="https://github.com/sanskrutiraut/project3" class="project-link" target="_blank">GitHub →</a>
-                            <a href="#" class="project-link" target="_blank">Live Demo →</a>
+                            <!-- <a href="#" class="project-link" target="_blank">Live Demo →</a> -->
                         </div>
                     </div>
                 </div>
